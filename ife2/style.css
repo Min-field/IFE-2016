@@ -1,3 +1,5 @@
+
+/*全局*/
 /*清除默认样式*/
 *{
 	padding: 0;
@@ -8,6 +10,17 @@
 body{
     background:#DEDEDE;
 }
+
+p{
+    /*开头空两行*/
+    text-indent: 2em; 
+    /*设置行高*/
+    line-height: 180%;
+}
+/*全局结束*/
+
+
+
 /*导航条开始*/
 .daohang{
 	/*width: 1280px;*/
@@ -50,13 +63,41 @@ body{
 /*文章一开始*/
 .article1{
     margin:30px 15px 15px 15px;
-    padding: 30px 10px 10px 10px;
+    padding: 20px;
+    /*padding: 30px 10px 10px 10px;*/
     border-top: 1px solid white;
     border-left: 1px solid white;
     border-right: 2px solid #A1A1A1;
     border-bottom: 2px solid #A1A1A1;
     background: white;
 }
+
+.article1 h2{
+    margin-top: 20px;
+}
+.article1 h3{
+    margin: 15px 0px;
+    color: #7A7768;
+}
+
+.article1 span{
+    display: inline-block;
+    height: 12px;
+    margin: 15px 0px;
+    margin-top: 0px;
+    color: #989F8D; 
+    font-size: 12px;
+}
+
+.article1 img{
+    /*将图片缩小到300×300的范围内*/
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 15px 0px;
+}
+
+
 /*文章一结束*/
 
 
