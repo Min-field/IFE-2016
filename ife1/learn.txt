@@ -1,0 +1,7 @@
+1. 如何实现在网页的开始处产生一系列的空白
+2. ul 无序列表 ol有序列表
+3. textarea 是表单的一种
+4. form : input textarea select
+	input: radio checkbox password text 
+5. lebal 标签，鼠标点击相应的文本触发相关的控件
+：
