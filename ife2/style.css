@@ -97,11 +97,241 @@ p{
     margin: 15px 0px;
 }
 
-
 /*文章一结束*/
 
+/*文章二开始*/
+.article2{
+    margin:30px 15px 15px 15px;
+    padding: 20px;
+    /*padding: 30px 10px 10px 10px;*/
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 2px solid #A1A1A1;
+    border-bottom: 2px solid #A1A1A1;
+    background: white;
+}
+/*文章二结束*/
+.article2 h2{
+    margin: 15px 0;
+}
+
+.article2 h3{
+    margin: 15px 0;
+    color: #7A7768;
+}
+
+.article2 span{
+    /*只有在两个都是block时上下两个margin才取最大值，当其中一个是inline-block*/
+    /*时则算的是整个margin*/
+    display: block;
+    /*font: 12px;*/
+    /*这样写不行，在现代浏览器中font必须用字体号和字体族，少一个或者顺序不对都不会判无效*/
+    /*而且其他的字体设置必须在字体号前面*/
+    font-size: 12px;
+    color: #989F8D;
+    margin: 15px 0;
+}
+
+.article2 img{
+    max-height: 300px;
+    max-width: 300px;
+    display: block;
+}
+
+.article2 ul{
+    margin:15px;
+    list-style: none;
+}
+
+/*文章二结束*/
+
+/*文章三开始*/
+.article3{
+    margin:30px 15px 15px 15px;
+    padding: 20px;
+    /*padding: 30px 10px 10px 10px;*/
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 2px solid #A1A1A1;
+    border-bottom: 2px solid #A1A1A1;
+    background: white;
+}
+
+.article3 h2{
+    margin: 15px;
+}
+
+.article3 .pic{
+    width: 120px;
+    height: 120px;
+    margin: 15px 40px;
+    border: 1px solid grey;
+}
+
+.article3 span{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    margin: 10px;
+}
+.article3 img{
+    width: 100px;
+    height: 80px;
+    display: block;
+    /*width: auto;*/
+    margin: 10px;
+}
+/*文章三结束*/
+
+/*文章四开始.*/
+.article4{
+    margin:30px 15px 15px 15px;
+    padding: 20px;
+    /*padding: 30px 10px 10px 10px;*/
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 2px solid #A1A1A1;
+    border-bottom: 2px solid #A1A1A1;
+    background: white;
+}
+
+.article4 h2{
+    margin-top: 20px;
+}
+.article4 h3{
+    margin: 15px 0px;
+    color: #7A7768;
+}
+
+.article4 span{
+    display: block;
+    height: 12px;
+    margin: 15px 0px;
+    margin-top: 0px;
+    color: #989F8D; 
+    font-size: 12px;
+}
+
+.article4 ol{
+    margin: 20px;
+    line-height: 25px; 
+}
+
+/*网上加表格方法*/
+/*将表格的边框合并在一起*/
+/*table{
+    border-collapse:collapse;
+}
+table,th,td{
+    border: 1px solid black;
+}
+*/
+.article4 table th{
+    background: #333333;
+    text-align: left;
+    color: white;
+}
+
+.article4 td.total{
+    background: #CCCCCC; 
+    font-weight: bold;
+}
+/*文章四结束*/
 
 
+/*表单开始*/
+.biaodan{
+    margin:30px 15px 15px 15px;
+    padding: 20px;
+    /*padding: 30px 10px 10px 10px;*/
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 2px solid #A1A1A1;
+    border-bottom: 2px solid #A1A1A1;
+    background: white;
+    overflow: auto;
+}
+
+.biaodan span{
+    display: block;
+    /*padding: 15px;*/
+    padding:0 15px;
+    height: 30px;
+    border-left: 5px #CDCDCD solid;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.cebianlan{
+    margin: 15px;
+    width: 275px;
+    height: 350px;
+    float: left;
+    border: 1px solid black;
+}
+
+.sub{
+    width: 850px;
+    height: auto;
+    margin: 15px;
+    border: 1px solid black;
+    float: left;
+}
+
+.biaodan .sub table{
+    border-collapse: collapse;
+}
+
+/*.biaodan .sub table,th,tr,td{*/
+    /*border: 1px solid red;*/
+/*}*/
+
+td{
+    padding:5px 10px;
+    font-size: 12px;
+}
+.biaodan td.left{
+    font-size: 12px;
+    width: 100px;
+    text-align: right;
+    vertical-align: center;
+}
+
+.biaodan td.right{
+    font-size: 12px;
+    vertical-align: top;
+}
+
+span.special{
+    display: inline-block;
+    border: none;
+    font-size: 12px;
+    color: #D6D7CF;
+    padding-left: 5px;
+    margin: 0;
+}
+
+
+option{
+    font-size: 12px;
+}
+
+
+/*也可以用js加背景图的形式来实现*/
+/*目前没学到*/
+/*fighting*/
+.submi{
+    width: 100%;
+    height: 40px;
+    background: #3355D0 ;
+    font-size: 19px;
+    color: white;
+    /*设置提交窗口的圆弧形*/
+    border-radius: 12px;
+}
+
+
+/*表单结束*/
 
 
 
