@@ -1,0 +1,72 @@
+/*清除默认样式*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*实现左右栏固定中间栏自适应的三栏式布局*/
+/*同过左右栏的float，中间栏控制margin距离来实现关键是计算好左右栏距离*/
+.main{
+    /*width:90%;*/
+    margin: 20px;
+    padding: 20px;
+    height: 500px;
+    /*实现了块级元素水平居中*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    background: #eee;
+    border: 1px #999 solid;
+}
+
+/*left块开始*/
+.main .left{
+    width: 200px;
+    height: 120px;
+    float: left;
+    border: 1px #999 solid;
+    background: white;
+}
+/*left块结束*/
+
+.main .right{
+    width: 120px;
+    height: 420px;
+    border: 1px #999 solid;
+    background: white;
+    float: right;
+}
+.main .center{
+    margin-left: 220px;
+    margin-right: 140px;
+    /*width: auto;*/
+    height: 365px;
+    background: white;
+    border: 1px #999 solid;
+    /*float: left;*/
+}
+/*三栏式布局一实现结束*/
+
+/*.logo{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}*/
+
+img{
+    display: block;
+    /*float: left;*/
+    width: 80px;
+    height: 80px;
+    max-height: 80px;
+    max-width: 80px;
+    margin: 20px; 
+}
+
+span{
+    position: absolute;
+    top:40px;
+    left: 160px;
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: top;
+}
+
