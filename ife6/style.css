@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: #5D5D5D;
+}
+/*主体部分开始*/
+.main{
+    width: 980px;
+    height: 1386px;
+    margin: 160px auto;
+    background: white;
+}
+
+/*页眉开始*/
+.yemei{
+    width: 892px;
+    height: 61px;
+    margin: 0 44px;
+    border-bottom: 2px solid #838e8c;
+}
+
+.yemei .logo{
+    display: table-cell;
+    width: 110px;
+    height: 61px;
+    background: #C75656;
+    vertical-align: bottom;
+    /*float: left;*/
+}
+
+.yemei .logo span{
+    display: inline-block;
+    text-indent: .5em;
+    padding-bottom: 2px;
+    font: 12px 黑体;
+    color: #ffffff;
+}
+
+.yemei .time{
+    display: table-cell;
+    height: 61px;
+    width: 110px;
+    vertical-align: bottom;
+    position: relative;
+    left: 672px;
+}
+
+.yemei .time span{
+    font: 12px 黑体; 
+    color: d45d5c;
+    align: right;
+    padding-bottom: 2px;
+    float: right;
+}
+/*页眉结束*/
+/*主体部分结束*/
