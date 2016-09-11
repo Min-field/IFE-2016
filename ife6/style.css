@@ -55,4 +55,64 @@ body{
     float: right;
 }
 /*页眉结束*/
+
+/*中间阴影部分开始*/
+.yinying_pic{
+    width: 641px;
+    height: 301px;
+    background: url(img/3.jpg);
+    margin: 35px 44px;
+    float: left;
+    /*overflow: hidden;*/
+}
+
+.yinying_pic .yinying_left{
+    width: 191px;
+    height: 301px;
+    opacity: 0.5;
+    background: blue;
+    float: left;
+}
+
+.yinying_pic .yinying_right{
+    width: 191px;
+    height: 301px;
+    opacity: 0.5;
+    background: red;
+    float: right;
+}
+/*中间阴影部分结束*/
+
+.about{
+    float: right;
+    width: 203px;
+    margin: 35px 44px;
+    margin-left: 0px;
+    border-top: 2px solid #cc8091;
+}
+
+.about p{
+    text-transform: capitalize;
+    text-decoration: underline;
+    line-height: 40px;
+    font-size: 24px;
+    color: #000000;
+    font-style: 微软雅黑;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*主体部分结束*/
