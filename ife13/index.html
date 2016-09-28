@@ -7,15 +7,33 @@
 <body>
 
   <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
-  <button id="button" onclick="func()">确认填写</button>
+  <button id="button">确认填写</button>
 
   <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
 
 <script type="text/javascript">
-    function func(){
-      var ele = document.getElementById("aqi-input").value;
-      document.getElementById("aqi-display").innerHTML = ele.toString();
-    };
+    // 第一次真正写js代码,有些要注意的东西:
+    //   1. ((function){})()的写法是为了自动执行这段代码,同时避免污染全局环境
+    //       第一对括弧是为了向解释器返回一个匿名函数,第二个括弧是立刻执行这段代码
+    //   2. getElementById() 的id是要有双引号引起来的string类型
+    //   3. js中命名规范是驼峰命名,而且所有名称都符合这个规范
+    (function(){
+        var $ = function(id){
+            return document.getElementById(id);
+        };
+        
+        var handle = function(){
+            $("aqi-display").innerHTML = $("aqi-input").value;
+        };
+
+        $("button").onclick = handle;
+
+        $("aqi-input").onkeydown = function(){
+          if(event.keyCode === 13){
+            handle();
+          }
+        }
+    })();
 </script>
 </body>
 </html>
